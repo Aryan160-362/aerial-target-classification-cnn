@@ -32,6 +32,66 @@ The trained classifier is then tested on a separate real radar dataset to evalua
 
 
 
+\---
+
+
+
+\## Project Pipeline
+
+
+
+This project is the classification stage of a broader synthetic radar data generation and classification pipeline.
+
+
+
+```text
+
+Real Radar Data
+
+&#x20;     │
+
+&#x20;     ▼
+
+Conditional GAN (cGAN)
+
+&#x20;     │
+
+&#x20;     ▼
+
+Synthetic Radar Spectrograms
+
+&#x20;     │
+
+&#x20;     ├──────────────┐
+
+&#x20;     │              │
+
+&#x20;     ▼              ▼
+
+Synthetic Data   Small Real Dataset
+
+&#x20;     │              │
+
+&#x20;     └──────┬───────┘
+
+&#x20;            ▼
+
+&#x20;       CNN Classifier
+
+&#x20;            │
+
+&#x20;            ▼
+
+&#x20;    Real Radar Dataset
+
+&#x20;            │
+
+&#x20;            ▼
+
+&#x20;      Final Evaluation
+
+
+
 \## Objective
 
 
