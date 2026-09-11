@@ -252,3 +252,91 @@ Real Radar Dataset
 
 &#x20;         Model Evaluation
 
+\---
+
+
+
+\## Results
+
+
+
+\### Validation Performance
+
+
+
+The CNN was trained using the combined synthetic and small real-data training set and evaluated on a held-out validation set.
+
+
+
+\- \*\*Validation Accuracy:\*\* 99.62%
+
+\- \*\*Validation Loss:\*\* 0.0280
+
+\- \*\*Validation Samples:\*\* 2,884
+
+
+
+\### Validation Accuracy and Loss
+
+
+
+!\[Validation Accuracy and Loss](results/validation\_accuracy\_loss.png)
+
+
+
+\### Validation Confusion Matrix
+
+
+
+!\[Validation Confusion Matrix](results/validation\_confusion\_matrix.png)
+
+
+
+\---
+
+
+
+\### Real Dataset Testing Performance
+
+
+
+After training, the CNN was evaluated on a separate real radar Micro-Doppler dataset.
+
+
+
+\- \*\*Testing Accuracy:\*\* 99.34%
+
+\- \*\*Testing Loss:\*\* 0.0569
+
+\- \*\*Testing Samples:\*\* 2,423
+
+
+
+\### Testing Confusion Matrix
+
+
+
+!\[Testing Confusion Matrix](results/testing\_confusion\_matrix.png)
+
+
+
+\### Per-Class Testing Accuracy
+
+
+
+| Target Class | Accuracy |
+
+|---|---:|
+
+| `3\_long\_blade\_rotor` | 99.50% |
+
+| `3\_short\_blade\_rotor` | 98.75% |
+
+| `Bird` | 100.00% |
+
+| `Bird+mini-helicopter` | 100.00% |
+
+| `RC\_plane` | 97.75% |
+
+| `drone` | 100.00% |
+
